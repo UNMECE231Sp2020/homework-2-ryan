@@ -52,7 +52,7 @@ Complex Complex::mult(Complex c1){
 	return temp;
 }
 
-Complex Complex::div(Complex c1){
+Complex Complex::div(Complex c1.magnitude){
 	double denom = c1.magnitude*c1.magnitude;
 	if (denom == 0){
 		Complex Fun(0, 0);
@@ -69,7 +69,7 @@ Complex Complex::div(Complex c1){
 }
 
 double Complex::magnitude() {
-	double result = sqrt({_real*_real} + {_imag*_imag});
+	double result = sqrt(_real*_real + _imag*_imag);
 	return result;
 }
 double Complex::phase() {
