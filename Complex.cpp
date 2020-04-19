@@ -21,12 +21,10 @@ Complex::~Complex(){
 	std::cout << "Done" << std::endl;
 }
 
-//TODO: According to declarations.h shouldn't this be RealNumberGen()?
 double Complex::real() const {
 	return _real;
 }
 
-//TODO: According to declarations.h shouldn't this be ImagNumberGen()?
 double Complex::imag() const {
 	return _imag;
 }
@@ -55,7 +53,6 @@ Complex Complex::mult(Complex c1){
 }
 
 Complex Complex::div(Complex c1){
-	//TODO: I think you mean c1.magnitude()
 	double denom = c1.magnitude*c1.magnitude;
 	if (denom == 0){
 		Complex Fun(0, 0);
@@ -72,7 +69,6 @@ Complex Complex::div(Complex c1){
 }
 
 double Complex::magnitude() {
-	//TODO: remove both {} pairs, they are not doing what you think they are
 	double result = sqrt({_real*_real} + {_imag*_imag});
 	return result;
 }
