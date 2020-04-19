@@ -12,8 +12,8 @@ class Complex {
 		Complex (const Complex &value);
 		~Complex ();
 
-		double RealNumberGen() const;
-		double ImagNumberGen() const;
+		double real() const; //Different name
+		double imag() const;
 
 		void print();
 
